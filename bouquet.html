@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="index,follow" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Daily Flower</title>
+    <meta
+      name="description"
+      content="Daily Flower 꽃같은 당신께 소소한 행복을 피워들비니다."
+    />
+    <link rel="canonical" href="" />
+    <!-- og -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Daily Flower" />
+    <meta property="og:description" content="Daily Flower" />
+    <meta property="og:image" content="./assets/images/common/logo.png" />
+    <meta property="og:url" content="" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/common.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <!-- SCRIPT -->
+    <script
+      type="text/javascript"
+      src="./assets/js/jquery-1.11.2.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <!-- wrap -->
+    <div id="wrap">
+      <!-- header -->
+      <div
+        id="header"
+        data-aos="fade"
+        data-aos-duration="1400"
+        data-aos-easing="ease-in-out"
+      >
+        <div class="inner">
+          <h1>
+            <a href="./index.html"
+              ><img src="./assets/images/common/logo.png" alt=""
+            /></a>
+          </h1>
+          <div id="gnb" class="lato">
+            <ul>
+              <li><a href="./index.html">home</a></li>
+              <li><a href="./bouquet.html">bouquet</a></li>
+              <li><a href="./class.html">class</a></li>
+              <li><a href="./about.html">about</a></li>
+              <li><a href="./flowerstory.html">flowerstory</a></li>
+            </ul>
+          </div>
+          <div class="header_right">
+            <a href="#">login</a>
+            <a href="#">my cart</a>
+          </div>
+          <div class="mobile_btn">
+            <button type="button" onclick="sideBar.open()">
+              <i class="fal fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- //header -->
+      <!-- sideBar -->
+      <div id="sideBar">
+        <div class="sideBar_top">
+          <a href="#">login</a>
+          <a href="#">my cart</a>
+        </div>
+        <div id="mobile_gnb">
+          <ul>
+            <li><a href="./index.html">home</a></li>
+            <li><a href="./bouquet.html">bouquet</a></li>
+            <li><a href="./class.html">class</a></li>
+            <li><a href="./about.html">about</a></li>
+            <li><a href="./flowerstory.html">flowerstory</a></li>
+          </ul>
+        </div>
+        <button type="button" class="close_btn" onclick="sideBar.close();">
+          <i class="fal fa-times"></i>
+        </button>
+      </div>
+      <div class="mask" onclick="sideBar.close();"></div>
+      <!-- //sideBar -->
+      <!-- container -->
+      <div id="container" class="sub">
+        <!-- class -->
+        <div class="sub_bouquet sub_class">
+          <div
+            class="sub_top"
+            data-aos="fade"
+            data-aos-duration="1400"
+            data-aos-easing="ease-in-out"
+          >
+            <img src="./assets/images/subTop_bouquet.jpg" alt="" />
+          </div>
+
+          <div class="section1">
+            <div class="inner">
+              <div class="hidden">
+                <div class="fl">
+                  <div
+                    class="txt"
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    data-aos-easing="ease-in-out"
+                  >
+                    <div class="txt_top">
+                      <img
+                        src="./assets/images/bouquet_section1_title.png"
+                        alt=""
+                      />
+                      <strong><em>하나,</em><span>꽃 알아보기</span></strong>
+                    </div>
+                    <div class="txt_btm">
+                      <img
+                        src="./assets/images/bouquet_section1_line1.png"
+                        alt=""
+                      />
+                      <strong
+                        >계절의 시작을 꽃과 함께
+                        <span>가을에 어울리는 꽃다발</span></strong
+                      >
+                      <p>
+                        뜨거운 여름의 열기도 한 풀 꺾이고 부쩍 선선해진
+                        공기가<br />
+                        어느새 가을이 다가오고 있음 실감나게 해요.<br />
+                        새로운 계절의 시작은 늘 우리의 마음을 이유없이 설레게
+                        만들곤 하지요.<br />
+                        많은 사람들이 일년 중 가장 날이 좋고 바깥 풍경이
+                        아름다운 계절로 꼽는 가을.<br /><br />
+
+                        오늘은 가을과 잘 어울리는 꽃에 대해서 이야기를
+                        나눠볼까요?<br />
+                        그달 소소한 나날에 가장 이쁜 꽃들로 가득 담아보세요<br />
+                        무척이나 소중한 꽃들을 준비했어요
+                      </p>
+                      <img
+                        src="./assets/images/bouquet_section1_line2.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="fr">
+                  <img src="./assets/images/bouquet_section1_img.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section2">
+            <div class="inner">
+              <div class="img">
+                <img src="./assets/images/bouquet_section2_img.png" alt="" />
+              </div>
+              <div
+                class="txt"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+              >
+                <div class="txt_top">
+                  <img
+                    src="./assets/images/bouquet_section2_title.png"
+                    alt=""
+                  />
+                  <strong><em>둘,</em><span>꽃 고르기</span></strong>
+                </div>
+                <div class="txt_btm">
+                  <img
+                    src="./assets/images/bouquet_section1_line1.png"
+                    alt=""
+                  />
+                  <strong>가을에 피는 대표적인 <span>꽃 국화</span></strong>
+                  <p>
+                    국화는 우리가 가장 쉽게 떠올릴 수 있는 대표적인
+                    단일식물이에요.<br />
+                    가을에 가장 많이 볼 수 있는 꽃이기도 하고요.<br />
+                    우리가 자주 사용하는 들국화라는 표현은<br />
+                    산지에 피어있는 야생 국화무리를 일컫는 표현이에요.<br /><br />
+
+                    화려하지는 않지만 심플한 외형에 진실함과 고상함이 엿보이는
+                    국화,<br />
+                    올해 가을꽃으로 어떠신가요?
+                  </p>
+                  <img
+                    src="./assets/images/bouquet_section1_line2.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section3">
+            <div class="inner">
+              <div
+                class="bouquet_list"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+              >
+                <div class="bouquet_tab">
+                  <h3>꽃다발 둘러보기</h3>
+                  <ul>
+                    <li>
+                      <button
+                        class="active"
+                        onclick="bouquet_tab(1)"
+                        type="button"
+                      >
+                        BEST 꽃다발
+                      </button>
+                    </li>
+                    <li>
+                      <button onclick="bouquet_tab(2)" type="button">
+                        NEW 꽃다발
+                      </button>
+                    </li>
+                    <li>
+                      <button onclick="bouquet_tab(3)" type="button">
+                        시즌별 인기꽃
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="item1 show" style="opacity: 1">
+                  <div class="row">
+                    <div class="col">
+                      <div class="tab">
+                        <h3>꽃다발 둘러보기</h3>
+                        <ul>
+                          <li>
+                            <button
+                              class="active"
+                              onclick="bouquet_tab(1)"
+                              type="button"
+                            >
+                              BEST 꽃다발
+                            </button>
+                          </li>
+                          <li>
+                            <button onclick="bouquet_tab(2)" type="button">
+                              NEW 꽃다발
+                            </button>
+                          </li>
+                          <li>
+                            <button onclick="bouquet_tab(3)" type="button">
+                              시즌별 인기꽃
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="post">
+                        <div class="hidden">
+                          <div
+                            class="thumb big"
+                            style="
+                              background-image: url(./assets/images/post_thumb_01.jpg);
+                            "
+                          ></div>
+                        </div>
+                        <div class="text">
+                          <div class="title">
+                            <strong>
+                              # 곁에 머물고싶은
+                              <span>카라에디션</span>
+                            </strong>
+                            <img src="./assets/images/post_line.png" alt="" />
+                          </div>
+                          <div class="desc">
+                            누구라도 좋아하지 않을 수 없는<br />
+                            특별하고 풍성한 꽃다발을 준비했어요.<br />
+                            이번 토끼풀꽃 에디션의 메인꽃은<br />
+                            매혹적인 와인빛을 지닌 <br />로망스카라예요.
+                          </div>
+                          <div class="size"><em>M</em> <span>size</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="post">
+                        <div class="hidden">
+                          <div
+                            class="thumb small"
+                            style="
+                              background-image: url(./assets/images/post_thumb_02.jpg);
+                            "
+                          ></div>
+                        </div>
+                        <div class="text">
+                          <div class="title">
+                            <strong>
+                              # 선형빛의 색을가진 ,
+                              <span>다알리아 에디션</span>
+                            </strong>
+                            <img src="./assets/images/post_line.png" alt="" />
+                          </div>
+                          <div class="desc">
+                            화려한 색감의 꽃은 여름에 가장 <br />빛나죠. 이번
+                            에디션의 메인꽃은<br />
+                            ‘화려함’이라는 꽃말답게 화사한 <br />모습으로 여름의
+                            시작을 알리는 <br />다알리아예요.
+                          </div>
+                          <div class="size"><em>L</em> <span>size</span></div>
+                        </div>
+                      </div>
+                      <div class="post">
+                        <div class="hidden">
+                          <div
+                            class="thumb small"
+                            style="
+                              background-image: url(./assets/images/post_thumb_03.jpg);
+                            "
+                          ></div>
+                        </div>
+                        <div class="text">
+                          <div class="title">
+                            <strong>
+                              # 향긋한 봄 ,
+                              <span>스프링가든 에디션</span>
+                            </strong>
+                            <img src="./assets/images/post_line.png" alt="" />
+                          </div>
+                          <div class="desc">
+                            봄 기운에 취한다는 말이 있죠. <br />알록달록
+                            피어나는 다채로운 색감의 <br />봄꽃들로 알 수 없이
+                            살랑거리는 <br />기분을 표현했어요.
+                          </div>
+                          <div class="size"><em>S</em> <span>size</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="post">
+                        <div class="hidden">
+                          <div
+                            class="thumb big"
+                            style="
+                              background-image: url(./assets/images/post_thumb_04.jpg);
+                            "
+                          ></div>
+                        </div>
+                        <div class="text">
+                          <div class="title">
+                            <strong>
+                              # 신비롭게 빠져드는,
+                              <span>리시안셔스 에디션</span>
+                            </strong>
+                            <img src="./assets/images/post_line.png" alt="" />
+                          </div>
+                          <div class="desc">
+                            이번 에디션의 메인꽃은 우아한 <br />무드의 여린
+                            연보라빛 <br />리시안셔스예요.<br />
+                            프릴처럼 나풀거리는 사랑스러운<br />
+                            꽃잎을 지닌 리시안셔스는 모습과는 <br />달리 튼튼한
+                            꽃이에요
+                          </div>
+                          <div class="size"><em>S</em> <span>size</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item2">
+                  <div class="row">
+                    <div class="col">
+                      <div class="tab">
+                        <h3>꽃다발 둘러보기</h3>
+                        <ul>
+                          <li>
+                            <button onclick="bouquet_tab(1)" type="button">
+                              BEST 꽃다발
+                            </button>
+                          </li>
+                          <li>
+                            <button
+                              class="active"
+                              onclick="bouquet_tab(2)"
+                              type="button"
+                            >
+                              NEW 꽃다발
+                            </button>
+                          </li>
+                          <li>
+                            <button onclick="bouquet_tab(3)" type="button">
+                              시즌별 인기꽃
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="post">
+                        <div class="hidden">
+                          <div
+                            class="thumb big"
+                            style="
+                              background-image: url(./assets/images/post_thumb_05.jpg);
+                            "
+                          ></div>
+                        </div>
+                        <div class="text">
+                          <div class="title">
+                            <strong>
+                              # 곁에 머물고싶은
+                              <span>카라에디션</span>
+                            </strong>
+                            <img src="./assets/images/post_line.png" alt="" />
+                          </div>
+                          <div class="desc">
+                            누구라도 좋아하지 않을 수 없는<br />
+                            특별하고 풍성한 꽃다발을 준비했어요.<br />
+                            이번 토끼풀꽃 에디션의 메인꽃은<br />
+                            매혹적인 와인빛을 지닌 <br />로망스카라예요.
+                          </div>
+                          <div class="size"><em>M</em> <span>size</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="post">
+                        <div class="hidden">
+                          <div
+                            class="thumb small"
+                            style="
+                              background-image: url(./assets/images/post_thumb_06.jpg);
+                            "
+                          ></div>
+                        </div>
+                        <div class="text">
+                          <div class="title">
+                            <strong>
+                              # 우아한 색을가진 ,
+                              <span>퍼플 로즈 에디션</span>
+                            </strong>
+                            <img src="./assets/images/post_line.png" alt="" />
+                          </div>
+                          <div class="desc">
+                            이번 에디션은 그 보랏빛을 가득 머금은<br />
+                            돌세토 장미와 리시안셔스를 메인으로<br />
+                            이 계절 가장 아름다운 열 두가지의 <br />꽃과 소재를
+                            가득 담아 ‘퍼플 로즈 <br />에디션’을 준비해봤어요.
+                          </div>
+                          <div class="size"><em>L</em> <span>size</span></div>
+                        </div>
+                      </div>
+                      <div class="post">
+                        <div class="hidden">
+                          <div
+                            class="thumb small"
+                            style="
+                              background-image: url(./assets/images/post_thumb_07.jpg);
+                            "
+                          ></div>
+                        </div>
+                        <div class="text">
+                          <div class="title">
+                            <strong>
+                              # 별을 닮은 꽃,
+                              <span>화이트 블루 옥시</span>
+                            </strong>
+                            <img src="./assets/images/post_line.png" alt="" />
+                          </div>
+                          <div class="desc">
+                            맑다 못해 푸르스름한 여름 밤 하늘, <br />빼곡히
+                            들어찬 별을 그대로 담은 듯한 <br />'화이트 블루
+                            옥시'를 준비했어요
+                          </div>
+                          <div class="size"><em>S</em> <span>size</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="post">
+                        <div class="hidden">
+                          <div
+                            class="thumb small"
+                            style="
+                              background-image: url(./assets/images/post_thumb_08.jpg);
+                            "
+                          ></div>
+                        </div>
+                        <div class="text">
+                          <div class="title">
+                            <strong>
+                              # 가을 오렌지로 물든 ,
+                              <span>빈티지 에디션</span>
+                            </strong>
+                            <img src="./assets/images/post_line.png" alt="" />
+                          </div>
+                          <div class="desc">
+                            빈티지한 오렌지빛 다알리아와<br />
+                            가을 느낌을 제대로 전할 소재를 <br />풍성하게 담아
+                            가을을 기다린<br />
+                            소중한 당신을 위해 준비했어요.
+                          </div>
+                          <div class="size"><em>L</em> <span>size</span></div>
+                        </div>
+                      </div>
+                      <div class="post">
+                        <div class="hidden">
+                          <div
+                            class="thumb small"
+                            style="
+                              background-image: url(./assets/images/post_thumb_09.jpg);
+                            "
+                          ></div>
+                        </div>
+                        <div class="text">
+                          <div class="title">
+                            <strong>
+                              # ‘축복’의 꽃말이 담긴
+                              <span>캄파넬라부케</span>
+                            </strong>
+                            <img src="./assets/images/post_line.png" alt="" />
+                          </div>
+                          <div class="desc">
+                            꽃 선물을 전하는 날은 대개는 좋은 <br />날이지요.
+                            소중한 사람에게 좋은 일이 <br />생긴 날, 그 하루를
+                            ‘축복’해주는 <br />꽃말을 담고 있는 꽃다발을
+                            소개해요.
+                          </div>
+                          <div class="size"><em>L</em> <span>size</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item3">
+                  <div class="row">
+                    <div class="col">
+                      <div class="tab">
+                        <h3>꽃다발 둘러보기</h3>
+                        <ul>
+                          <li>
+                            <button onclick="bouquet_tab(1)" type="button">
+                              BEST 꽃다발
+                            </button>
+                          </li>
+                          <li>
+                            <button onclick="bouquet_tab(2)" type="button">
+                              NEW 꽃다발
+                            </button>
+                          </li>
+                          <li>
+                            <button
+                              class="active"
+                              onclick="bouquet_tab(3)"
+                              type="button"
+                            >
+                              시즌별 인기꽃
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="post">
+                        <div class="hidden">
+                          <div
+                            class="thumb big"
+                            style="
+                              background-image: url(./assets/images/post_thumb_10.jpg);
+                            "
+                          ></div>
+                        </div>
+                        <div class="text">
+                          <div class="title">
+                            <strong>
+                              # 가을 분위기,
+                              <span>클래식 로즈 에디션</span>
+                            </strong>
+                            <img src="./assets/images/post_line.png" alt="" />
+                          </div>
+                          <div class="desc">
+                            오랜 시간, 꾸준히 사랑받는 레드 <br />로즈로
+                            정열적인 당신의 마음을 <br />전해보세요.
+                          </div>
+                          <div class="size"><em>M</em> <span>size</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="post">
+                        <div class="hidden">
+                          <div
+                            class="thumb small"
+                            style="
+                              background-image: url(./assets/images/post_thumb_11.jpg);
+                            "
+                          ></div>
+                        </div>
+                        <div class="text">
+                          <div class="title">
+                            <strong>
+                              # 화이트핑크 ,
+                              <span>안개꽃</span>
+                            </strong>
+                            <img src="./assets/images/post_line.png" alt="" />
+                          </div>
+                          <div class="desc">
+                            소담한 매력을 가진 안개꽃으로 만든 <br />귀여움
+                            가득한 미니 꽃다발을 <br />준비했어요.
+                          </div>
+                          <div class="size"><em>L</em> <span>size</span></div>
+                        </div>
+                      </div>
+                      <div class="post">
+                        <div class="hidden">
+                          <div
+                            class="thumb small"
+                            style="
+                              background-image: url(./assets/images/post_thumb_12.jpg);
+                            "
+                          ></div>
+                        </div>
+                        <div class="text">
+                          <div class="title">
+                            <strong>
+                              # 톡 건드려 보고픈,
+                              <span>거베라 에디션</span>
+                            </strong>
+                            <img src="./assets/images/post_line.png" alt="" />
+                          </div>
+                          <div class="desc">
+                            이 계절에 딱 어울리는<br />
+                            망고빛 거베라 에디션을 소개해요.<br />
+                            화창하거나, 흐린 날씨를<br />
+                            모두 커버할 수 있는 아이들
+                          </div>
+                          <div class="size"><em>S</em> <span>size</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="post">
+                        <div class="hidden">
+                          <div
+                            class="thumb big"
+                            style="
+                              background-image: url(./assets/images/post_thumb_13.jpg);
+                            "
+                          ></div>
+                        </div>
+                        <div class="text">
+                          <div class="title">
+                            <strong>
+                              # 해피엔딩을 전하는
+                              <span>로맨틱 핑크부케</span>
+                            </strong>
+                            <img src="./assets/images/post_line.png" alt="" />
+                          </div>
+                          <div class="desc">
+                            설렘, 로맨스, 행복, 이 단어들에게 <br />빛깔이
+                            있었다면 아마 핑크일 거예요. <br />이 꽃을 선물 받는
+                            그 분의 마음도<br />
+                            이 빛깔로 물들 테죠.
+                          </div>
+                          <div class="size"><em>L</em> <span>size</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="sep aos-init"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+          >
+            <img src="./assets/images/bouquet_sep.png" alt="" />
+          </div>
+          <!-- reivew -->
+          <div class="class_reivew">
+            <div
+              class="section_top"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+            >
+              <h3 class="section_title">이벤트</h3>
+              <p class="section_summary">하루꽃에서 준비하는 선물들이에요</p>
+              <a href="#" class="more_btn">이벤트둘러보기</a>
+            </div>
+            <div
+              class="class_review_slide"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+            >
+              <div>
+                <img src="./assets/images/bouquet_event_1.png" alt="" />
+              </div>
+              <div>
+                <img src="./assets/images/bouquet_event_2.png" alt="" />
+              </div>
+              <div>
+                <img src="./assets/images/bouquet_event_3.png" alt="" />
+              </div>
+              <div>
+                <img src="./assets/images/bouquet_event_4.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- //reivew -->
+        </div>
+        <!-- //class -->
+      </div>
+      <!-- footer -->
+      <div
+        id="footer"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-easing="ease-in-out"
+      >
+        <div class="inner">
+          <div class="footer_info">
+            <strong>dailyflower</strong>
+            <div>
+              <span
+                >(주)하루꽃 대표 류소미 주소 서울특별시 서초구 강남대로45길 20,
+                201호</span
+              >
+              <span>사업자등록번호 857-81-0114233</span>
+              <span>통신판매업신고번호 제 2019-서울서초-3164호</span>
+              <span>개인정보담당자 배종민</span>
+            </div>
+            <p class="copyright">
+              © 2020 Dailyflower All rights reserved. Site by Lefthandr.
+            </p>
+          </div>
+          <div class="footer_right">
+            <ul>
+              <li><a href="#">INSTAGRAM</a></li>
+              <li><a href="#">BLOG</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+    <script src="./assets/js/ui.js"></script>
+  </body>
+</html>

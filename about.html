@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="index,follow" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Daily Flower</title>
+    <meta
+      name="description"
+      content="Daily Flower 꽃같은 당신께 소소한 행복을 피워들비니다."
+    />
+    <link rel="canonical" href="" />
+    <!-- og -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Daily Flower" />
+    <meta property="og:description" content="Daily Flower" />
+    <meta property="og:image" content="./assets/images/common/logo.png" />
+    <meta property="og:url" content="" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/common.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <!-- SCRIPT -->
+    <script
+      type="text/javascript"
+      src="./assets/js/jquery-1.11.2.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <!-- wrap -->
+    <div id="wrap">
+      <!-- header -->
+      <div
+        id="header"
+        data-aos="fade"
+        data-aos-duration="1400"
+        data-aos-easing="ease-in-out"
+      >
+        <div class="inner">
+          <h1>
+            <a href="./index.html"
+              ><img src="./assets/images/common/logo.png" alt=""
+            /></a>
+          </h1>
+          <div id="gnb" class="lato">
+            <ul>
+              <li><a href="./index.html">home</a></li>
+              <li><a href="./bouquet.html">bouquet</a></li>
+              <li><a href="./class.html">class</a></li>
+              <li><a href="./about.html">about</a></li>
+              <li><a href="./flowerstory.html">flowerstory</a></li>
+            </ul>
+          </div>
+          <div class="header_right">
+            <a href="#">login</a>
+            <a href="#">my cart</a>
+          </div>
+          <div class="mobile_btn">
+            <button type="button" onclick="sideBar.open()">
+              <i class="fal fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- //header -->
+      <!-- sideBar -->
+      <div id="sideBar">
+        <div class="sideBar_top">
+          <a href="#">login</a>
+          <a href="#">my cart</a>
+        </div>
+        <div id="mobile_gnb">
+          <ul>
+            <li><a href="./index.html">home</a></li>
+            <li><a href="./bouquet.html">bouquet</a></li>
+            <li><a href="./class.html">class</a></li>
+            <li><a href="./about.html">about</a></li>
+            <li><a href="./flowerstory.html">flowerstory</a></li>
+          </ul>
+        </div>
+        <button type="button" class="close_btn" onclick="sideBar.close();">
+          <i class="fal fa-times"></i>
+        </button>
+      </div>
+      <div class="mask" onclick="sideBar.close();"></div>
+      <!-- //sideBar -->
+      <!-- container -->
+      <div id="container" class="sub">
+        <!-- flower_story -->
+        <div class="sub_about">
+          <div
+            class="sub_top"
+            data-aos="fade"
+            data-aos-duration="1400"
+            data-aos-easing="ease-in-out"
+          >
+            <img src="./assets/images/subTop_about.jpg" alt="" />
+          </div>
+          <div class="about_inner">
+            <div class="inner">
+              <div
+                class="about_title"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+              >
+                <img src="./assets/images/story_title.png" alt="story" />
+                <div>
+                  <span>
+                    <img src="./assets/images/line.png" alt="" />
+                  </span>
+                  <strong>하루,꽃 이야기</strong>
+                  <span>
+                    <img src="./assets/images/line.png" alt="" />
+                  </span>
+                </div>
+                <p>하루, 꽃을 통한 ‘일상 속에 소소한 행복을 선물로 드립니다.</p>
+              </div>
+
+              <div class="about_content">
+                <div
+                  class="about_img"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-easing="ease-in-out"
+                >
+                  <img src="./assets/images/about_img.png" alt="" />
+                </div>
+                <div
+                  class="about_text text1"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-easing="ease-in-out"
+                >
+                  꽃으로 새로운 라이프스타일을 만들어가는<br />
+                  하루,꽃의 문화를 소개해요.<br /><br />
+
+                  꽃이 특별한 날뿐만아닌 일상 속에 스며들어<br />
+                  소소한 행복을 전해주는것이 저희의 목표에요<br /><br />
+
+                  우리는 한국에도 멋진 ‘꽃 브랜드’가 생길 수 있다고 믿어요.<br />
+                  꽃으로 시도할 수 있는 모든 것들의 가능성을 열어두고,<br />
+                  항상 새로운 도전을 하는 열정적이고 창조적인 사람들이에요.<br />
+                  아직 우리가 발견하지 않았기에 정답은 존재하지 않고,<br />
+                  그 답을 찾는 길을 함께 걸어가고 있죠.
+                </div>
+                <div
+                  class="about_sep"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-easing="ease-in-out"
+                >
+                  <img src="./assets/images/about_sep.png" alt="" />
+                </div>
+                <div
+                  class="about_text"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-easing="ease-in-out"
+                >
+                  <strong
+                    >자율과 책임을 같은 무게로 둘 때,<br />
+                    가장 멋진 일들을 해낼 수 있을 거라고 믿어요.</strong
+                  >
+                  인턴도 대표에게 NO라고 말할 수 있는 자유로운 분위기이고<br />
+                  새로운 시도에 얼마든지 열려있는 유연한 곳이지만<br />
+                  동시에 그 만큼 막중한 책임이 따르기도 해요.<br /><br />
+
+                  ‘꽃’에 있어서는 누구도 도전해 보지 않은 일들을<br />
+                  끊임없이 고민하고, 또 실행해야 하니까요.<br /><br />
+
+                  꽃의 위대한 아름다움에 종종 가려지곤 하지만<br />
+                  책임감과 전문성을 가진 프로들이 모여 있는 곳이랍니다.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //flower_story -->
+      </div>
+      <!-- footer -->
+      <div
+        id="footer"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-easing="ease-in-out"
+      >
+        <div class="inner">
+          <div class="footer_info">
+            <strong>dailyflower</strong>
+            <div>
+              <span
+                >(주)하루꽃 대표 류소미 주소 서울특별시 서초구 강남대로45길 20,
+                201호</span
+              >
+              <span>사업자등록번호 857-81-0114233</span>
+              <span>통신판매업신고번호 제 2019-서울서초-3164호</span>
+              <span>개인정보담당자 배종민</span>
+            </div>
+            <p class="copyright">
+              © 2020 Dailyflower All rights reserved. Site by Lefthandr.
+            </p>
+          </div>
+          <div class="footer_right">
+            <ul>
+              <li><a href="#">INSTAGRAM</a></li>
+              <li><a href="#">BLOG</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+    <script src="./assets/js/ui.js"></script>
+  </body>
+</html>

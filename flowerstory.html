@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="index,follow" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Daily Flower</title>
+    <meta
+      name="description"
+      content="Daily Flower 꽃같은 당신께 소소한 행복을 피워들비니다."
+    />
+    <link rel="canonical" href="" />
+    <!-- og -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Daily Flower" />
+    <meta property="og:description" content="Daily Flower" />
+    <meta property="og:image" content="./assets/images/common/logo.png" />
+    <meta property="og:url" content="" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/common.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <!-- SCRIPT -->
+    <script
+      type="text/javascript"
+      src="./assets/js/jquery-1.11.2.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <!-- wrap -->
+    <div id="wrap">
+      <!-- header -->
+      <div
+        id="header"
+        data-aos="fade"
+        data-aos-duration="1400"
+        data-aos-easing="ease-in-out"
+      >
+        <div class="inner">
+          <h1>
+            <a href="./index.html"
+              ><img src="./assets/images/common/logo.png" alt=""
+            /></a>
+          </h1>
+          <div id="gnb" class="lato">
+            <ul>
+              <li><a href="./index.html">home</a></li>
+              <li><a href="./bouquet.html">bouquet</a></li>
+              <li><a href="./class.html">class</a></li>
+              <li><a href="./about.html">about</a></li>
+              <li><a href="./flowerstory.html">flowerstory</a></li>
+            </ul>
+          </div>
+          <div class="header_right">
+            <a href="#">login</a>
+            <a href="#">my cart</a>
+          </div>
+          <div class="mobile_btn">
+            <button type="button" onclick="sideBar.open()">
+              <i class="fal fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- //header -->
+      <!-- sideBar -->
+      <div id="sideBar">
+        <div class="sideBar_top">
+          <a href="#">login</a>
+          <a href="#">my cart</a>
+        </div>
+        <div id="mobile_gnb">
+          <ul>
+            <li><a href="./index.html">home</a></li>
+            <li><a href="./bouquet.html">bouquet</a></li>
+            <li><a href="./class.html">class</a></li>
+            <li><a href="./about.html">about</a></li>
+            <li><a href="./flowerstory.html">flowerstory</a></li>
+          </ul>
+        </div>
+        <button type="button" class="close_btn" onclick="sideBar.close();">
+          <i class="fal fa-times"></i>
+        </button>
+      </div>
+      <div class="mask" onclick="sideBar.close();"></div>
+      <!-- //sideBar -->
+      <!-- container -->
+      <div id="container" class="sub">
+        <!-- flower_story -->
+        <div class="flower_story">
+          <div
+            class="sub_top"
+            data-aos="fade"
+            data-aos-duration="1400"
+            data-aos-easing="ease-in-out"
+          >
+            <img src="./assets/images/subTop_flowerStory.jpg" alt="" />
+          </div>
+          <div class="inner">
+            <div
+              class="story_title"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+            >
+              <img src="./assets/images/story_title.png" alt="story" />
+              <div>
+                <span>
+                  <img src="./assets/images/line.png" alt="" />
+                </span>
+                <strong>꽃 이야기</strong>
+                <span>
+                  <img src="./assets/images/line.png" alt="" />
+                </span>
+              </div>
+              <p>
+                평소 흔히 볼 수 있는 꽃들에 관한 특별한 이야기들을 들어보세요
+              </p>
+            </div>
+
+            <div class="comm_list">
+              <ul>
+                <li
+                  class="col1 type1 item1"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-easing="ease-in-out"
+                >
+                  <div
+                    class="img"
+                    style="
+                      background-image: url(./assets/images/comm_img_02.png);
+                    "
+                  ></div>
+                </li>
+                <li
+                  class="col2 type2 item2"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-easing="ease-in-out"
+                >
+                  <div class="img_box">
+                    <div
+                      class="img"
+                      style="
+                        background-image: url(./assets/images/comm_img_01.png);
+                      "
+                    ></div>
+                  </div>
+                </li>
+                <li
+                  class="col1 type3 item3"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-easing="ease-in-out"
+                >
+                  <div class="text">
+                    <strong class="title">
+                      <span>꽃이야기-</span><em>라벤더</em>
+                    </strong>
+                    <p>
+                      보라색의 이쁜 색감을 가진 라벤더는 <br />꿀풀과 라벤더속의
+                      상록 관목, 허브를 <br />대표하는 식물 중 하나에요<br />
+                      원산지는 카보베르데나 카나리아<br />
+                      제도 등의 대서양 연안이며<br />
+                      어원은 '씻다'라는 뜻의<br />
+                      라틴어 'Lavare'에서 유래했어요. <br />라틴어로는
+                      Lavandula(라반둘라)<br />
+                      라고 부르기도 한답니다.<br />
+                      기다란 꽃대 위에 보라색의 작고<br />
+                      기다란 타원형의 꽃망울들이 옹기종기 <br />매달려서 마치
+                      이삭과 같은 꼴을 이루고 <br />
+                      있는 것이 특징이에요
+                    </p>
+                  </div>
+                  <div class="img_box">
+                    <div
+                      class="img"
+                      style="
+                        background-image: url(./assets/images/comm_img_05.png);
+                      "
+                    ></div>
+                  </div>
+                  <div class="text">
+                    <strong class="title">
+                      <span>꽃이야기-</span><em>해바라기</em>
+                    </strong>
+                    <p>
+                      유럽에 처음 들어왔을때는<br />
+                      그 압도적인 자태로<br />
+                      센세이션을 일으킨<br />
+                      해바라기는 실은 수십개의<br />
+                      작은 꽃들이 모여 이루어진 두상화서에요 일편단심으로<br />
+                      한 사람을 사랑하는 사람을<br />
+                      해바라기에 비유하기도 해요 실제로 <br />해바라기의 꽃말
+                      역시 '일편단심'을<br />
+                      의미한다.<br />
+                      다만 해바라기 송이 수에 따라<br />
+                      꽃말이 약간씩 달라지는데.<br />
+                      4송이라면 "언제라도, 어디서라도 <br />당신만을
+                      바라본다."이며<br />
+                      그 유명한 해바라기 999송이는<br />
+                      "몇번을 다시 태어나도<br />
+                      당신만을 바라본다." 랍니다.
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="col1 type3 item4"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-easing="ease-in-out"
+                >
+                  <div class="text">
+                    <strong class="title">
+                      <span>꽃이야기-</span><em>장미</em>
+                    </strong>
+                    <p>
+                      다양한 색을가진 장미는 그만큼 많은 <br />꽃말을 가지고
+                      있답니다. 몆송이에 따라 <br />꽃말이 변하기도하며 백송이의
+                      장미는<br />
+                      ‘완전한 사랑’을 뜻하기도 한답니다.
+                    </p>
+                  </div>
+                  <div class="img_box">
+                    <div
+                      class="img big"
+                      style="
+                        background-image: url(./assets/images/comm_img_03.png);
+                      "
+                    ></div>
+                  </div>
+                  <div class="text">
+                    <strong class="title">
+                      <span>꽃이야기-</span><em>튤립</em>
+                    </strong>
+                    <p>
+                      네덜란드하면 떠오르는 꽃 튤립이지만 <br />사실 원산지는
+                      터키로 오늘날에도 <br />터키의 국화로 남아있는데요. 본래
+                      <br />lale(랄레)라고 불리던<br />
+                      마치 터번(Turban)처럼 생긴<br />
+                      생김새 때문에 Tülbend(튈벤드)라는 <br />별칭을 갖고
+                      있었는데, 이것이 라틴어 <br />tulipa와 프랑스어 tulipan을
+                      거쳐 <br />영어로 받아들여서 Tulip이 되었다. <br />터키
+                      사람들은 이 꽃을 관상용으로 <br />기르고 다양한 품종을
+                      만들어냈는데, <br />오늘날에도 터키인의 튤립 사랑은
+                      <br />남다를 정도로 전통 도자기 등에서도 <br />튤립의
+                      모습을 쉽게 찾아볼 수 있어요
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="col1 type3 item5"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-easing="ease-in-out"
+                >
+                  <div class="img_box">
+                    <div
+                      class="img big"
+                      style="
+                        background-image: url(./assets/images/comm_img_04.png);
+                      "
+                    ></div>
+                  </div>
+                  <div class="text">
+                    <strong class="title">
+                      <span>꽃이야기-</span><em>알스트로에메리아</em>
+                    </strong>
+                    <p>
+                      남아메리카를 원산지로 하는 <br />
+                      속씨 식물 중 하나이며.<br />
+                      개화시기는 4월부터 7월까지로<br />
+                      상당히 오랫동안 피어있는데요.<br />
+                      꽃말은 새로운 만남, 배려, 우정을<br />
+                      뜻한답니다.<br />
+                      '알스트로메리아'라고 읽기도 하며<br />
+                      원래 발음상으로는 이쪽이 <br />가깝다고해요
+                    </p>
+                  </div>
+                  <div class="img_box">
+                    <div
+                      class="img"
+                      style="
+                        background-image: url(./assets/images/comm_img_06.png);
+                      "
+                    ></div>
+                  </div>
+                  <div class="text">
+                    <strong class="title">
+                      <span>꽃이야기-</span><em>메밀</em>
+                    </strong>
+                    <p>
+                      드라마 ‘도깨비’에서 유명한 메밀은 <br />메밀밭에 피기
+                      시작한 꽃이 소금을 <br />뿌린 듯이 흐붓한 달빛에 숨이 막힐
+                      <br />정도로 아름다운 메밀 꽃이에요
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- //flower_story -->
+      </div>
+      <!-- footer -->
+      <div
+        id="footer"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-easing="ease-in-out"
+      >
+        <div class="inner">
+          <div class="footer_info">
+            <strong>dailyflower</strong>
+            <div>
+              <span
+                >(주)하루꽃 대표 류소미 주소 서울특별시 서초구 강남대로45길 20,
+                201호</span
+              >
+              <span>사업자등록번호 857-81-0114233</span>
+              <span>통신판매업신고번호 제 2019-서울서초-3164호</span>
+              <span>개인정보담당자 배종민</span>
+            </div>
+            <p class="copyright">
+              © 2020 Dailyflower All rights reserved. Site by Lefthandr.
+            </p>
+          </div>
+          <div class="footer_right">
+            <ul>
+              <li><a href="#">INSTAGRAM</a></li>
+              <li><a href="#">BLOG</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+    <script src="./assets/js/ui.js"></script>
+  </body>
+</html>

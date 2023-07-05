@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="index,follow" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Daily Flower</title>
+    <meta
+      name="description"
+      content="Daily Flower 꽃같은 당신께 소소한 행복을 피워들비니다."
+    />
+    <link rel="canonical" href="" />
+    <!-- og -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Daily Flower" />
+    <meta property="og:description" content="Daily Flower" />
+    <meta property="og:image" content="./assets/images/common/logo.png" />
+    <meta property="og:url" content="" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/common.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <!-- SCRIPT -->
+    <script
+      type="text/javascript"
+      src="./assets/js/jquery-1.11.2.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <!-- wrap -->
+    <div id="wrap">
+      <!-- header -->
+      <div
+        id="header"
+        data-aos="fade"
+        data-aos-duration="1400"
+        data-aos-easing="ease-in-out"
+      >
+        <div class="inner">
+          <h1>
+            <a href="./index.html"
+              ><img src="./assets/images/common/logo.png" alt=""
+            /></a>
+          </h1>
+          <div id="gnb" class="lato">
+            <ul>
+              <li><a href="./index.html">home</a></li>
+              <li><a href="./bouquet.html">bouquet</a></li>
+              <li><a href="./class.html">class</a></li>
+              <li><a href="./about.html">about</a></li>
+              <li><a href="./flowerstory.html">flowerstory</a></li>
+            </ul>
+          </div>
+          <div class="header_right">
+            <a href="#">login</a>
+            <a href="#">my cart</a>
+          </div>
+          <div class="mobile_btn">
+            <button type="button" onclick="sideBar.open()">
+              <i class="fal fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- //header -->
+      <!-- sideBar -->
+      <div id="sideBar">
+        <div class="sideBar_top">
+          <a href="#">login</a>
+          <a href="#">my cart</a>
+        </div>
+        <div id="mobile_gnb">
+          <ul>
+            <li><a href="./index.html">home</a></li>
+            <li><a href="./bouquet.html">bouquet</a></li>
+            <li><a href="./class.html">class</a></li>
+            <li><a href="./about.html">about</a></li>
+            <li><a href="./flowerstory.html">flowerstory</a></li>
+          </ul>
+        </div>
+        <button type="button" class="close_btn" onclick="sideBar.close();">
+          <i class="fal fa-times"></i>
+        </button>
+      </div>
+      <div class="mask" onclick="sideBar.close();"></div>
+      <!-- //sideBar -->
+      <!-- container -->
+      <div id="container" class="sub">
+        <!-- class -->
+        <div class="sub_class">
+          <div
+            class="sub_top"
+            data-aos="fade"
+            data-aos-duration="1400"
+            data-aos-easing="ease-in-out"
+          >
+            <img src="./assets/images/subTop_class.jpg" alt="" />
+          </div>
+          <div class="section1">
+            <div class="inner">
+              <div
+                class="section1_title"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+              >
+                <img src="./assets/images/class_title.png" alt="story" />
+                <div>
+                  <span>
+                    <img src="./assets/images/line2.png" alt="" />
+                  </span>
+                  <strong>클래스</strong>
+                  <span>
+                    <img src="./assets/images/line2.png" alt="" />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="section1_img"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+            >
+              <img src="./assets/images/class_section1.png" alt="" />
+            </div>
+          </div>
+          <div class="class_list">
+            <div class="inner">
+              <div
+                class="section_top"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+              >
+                <img src="./assets/images/class_select_title.png" alt="" />
+                <h3 class="section_title">클래스 선택하기</h3>
+              </div>
+              <div
+                class="class_list_slide"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+              >
+                <div class="item1">
+                  <div class="bg"></div>
+                  <div class="text">
+                    <strong>순백의 미니 <em>로즈</em></strong>
+                    <span class="line"
+                      ><img src="./assets/images/class_list_line.png" alt=""
+                    /></span>
+                    <p>
+                      화려하지는 색은 아니지만<br />
+                      진실함과 고상함이 엿보이는 로즈클라스
+                    </p>
+                  </div>
+                </div>
+                <div class="item2">
+                  <div class="bg"></div>
+                  <div class="text">
+                    <strong>사랑의 <em>튤립</em></strong>
+                    <span class="line"
+                      ><img src="./assets/images/class_list_line.png" alt=""
+                    /></span>
+                    <p>
+                      사랑스러운 모습이 비춰지는<br />
+                      귀여운 튤립클라스
+                    </p>
+                  </div>
+                </div>
+                <div class="item3">
+                  <div class="bg"></div>
+                  <div class="text">
+                    <strong>화려함의 <em>작약</em></strong>
+                    <span class="line"
+                      ><img src="./assets/images/class_list_line.png" alt=""
+                    /></span>
+                    <p>
+                      꽃의 여왕으로 불려지는<br />
+                      화려한 작약클라스
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="location aos-init"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+          >
+            <div class="inner">
+              <div class="section_top">
+                <h3 class="section_title">
+                  당신의 행복을 위해 준비된 플라워레슨
+                </h3>
+                <p class="section_summary">자주 묻는 질문들을 정리했어요</p>
+              </div>
+              <div class="location_text">
+                <ul>
+                  <li>
+                    <p>
+                      <strong>영업안내 .</strong
+                      ><span>mon-sun : pm12-pm10</span>
+                    </p>
+                    <p>
+                      <span
+                        >하루꽃에는 클래스 수강생들을 위한 <br />
+                        프라이빗 룸이 준비되어 있어요.</span
+                      >
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>전화번호 .</strong><span>070-7755-52622</span>
+                    </p>
+                    <p>
+                      <strong>주소 .</strong
+                      ><span>3323-3 1층 하루꽃 마포구 서울특별시</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- preview -->
+          <div class="space">
+            <div class="inner">
+              <div
+                class="section_top"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+              >
+                <img src="./assets/images/class_preview_title.png" alt="" />
+                <h3 class="section_title">미리보기</h3>
+                <p class="section_summary">
+                  관심있는 클래스 작업의 모습을 미리살펴보세요
+                </p>
+              </div>
+              <div
+                class="space_img"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+              >
+                <ul class="space_slide">
+                  <li>
+                    <img src="./assets/images/preview_01.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="./assets/images/preview_02.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="./assets/images/preview_03.png" alt="" />
+                  </li>
+                </ul>
+                <a href="#" class="more_btn">더보러가기</a>
+              </div>
+            </div>
+          </div>
+          <!-- //space -->
+          <div
+            class="sep aos-init"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+          >
+            <img src="./assets/images/class_sep.png" alt="" />
+          </div>
+          <!-- reivew -->
+          <div class="class_reivew">
+            <div
+              class="section_top"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+            >
+              <h3 class="section_title">수강생후기</h3>
+              <p class="section_summary">
+                클래스들을 미리 수강한 수강생들의 생생한 말들을 들어보세요
+              </p>
+              <a href="#" class="more_btn">자세히보기</a>
+            </div>
+            <div
+              class="class_review_slide"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+            >
+              <div>
+                <img src="./assets/images/class_review_1.png" alt="" />
+              </div>
+              <div>
+                <img src="./assets/images/class_review_2.png" alt="" />
+              </div>
+              <div>
+                <img src="./assets/images/class_review_3.png" alt="" />
+              </div>
+              <div>
+                <img src="./assets/images/class_review_4.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- //reivew -->
+        </div>
+        <!-- //class -->
+      </div>
+      <!-- footer -->
+      <div
+        id="footer"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-easing="ease-in-out"
+      >
+        <div class="inner">
+          <div class="footer_info">
+            <strong>dailyflower</strong>
+            <div>
+              <span
+                >(주)하루꽃 대표 류소미 주소 서울특별시 서초구 강남대로45길 20,
+                201호</span
+              >
+              <span>사업자등록번호 857-81-0114233</span>
+              <span>통신판매업신고번호 제 2019-서울서초-3164호</span>
+              <span>개인정보담당자 배종민</span>
+            </div>
+            <p class="copyright">
+              © 2020 Dailyflower All rights reserved. Site by Lefthandr.
+            </p>
+          </div>
+          <div class="footer_right">
+            <ul>
+              <li><a href="#">INSTAGRAM</a></li>
+              <li><a href="#">BLOG</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+    <script src="./assets/js/ui.js"></script>
+  </body>
+</html>

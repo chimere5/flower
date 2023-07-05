@@ -1,0 +1,468 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+@font-face {
+  font-family: "Noto Serif KR";
+  font-style: normal;
+  font-weight: 100;
+  src: url(../fonts/NotoSerifKR-ExtraLight.woff2) format("woff2"),
+    url(../fonts/NotoSerifKR-ExtraLight.woff) format("woff"),
+    url(../fonts/NotoSerifKR-ExtraLight.otf) format("opentype");
+}
+@font-face {
+  font-family: "Noto Serif KR";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/NotoSerifKR-Light.woff2) format("woff2"),
+    url(../fonts/NotoSerifKR-Light.woff) format("woff"),
+    url(../fonts/NotoSerifKR-Light.otf) format("opentype");
+}
+@font-face {
+  font-family: "Noto Serif KR";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/NotoSerifKR-Regular.woff2) format("woff2"),
+    url(../fonts/NotoSerifKR-Regular.woff) format("woff"),
+    url(../fonts/NotoSerifKR-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: "Noto Serif KR";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/NotoSerifKR-Medium.woff2) format("woff2"),
+    url(../fonts/NotoSerifKR-Medium.woff) format("woff"),
+    url(../fonts/NotoSerifKR-Medium.otf) format("opentype");
+}
+@font-face {
+  font-family: "Noto Serif KR";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/NotoSerifKR-Bold.woff2) format("woff2"),
+    url(../fonts/NotoSerifKR-Bold.woff) format("woff"),
+    url(../fonts/NotoSerifKR-Bold.otf) format("opentype");
+}
+@font-face {
+  font-family: "Noto Serif KR";
+  font-style: normal;
+  font-weight: 900;
+  src: url(../fonts/NotoSerifKR-Black.woff2) format("woff2"),
+    url(../fonts/NotoSerifKR-Black.woff) format("woff"),
+    url(../fonts/NotoSerifKR-Black.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "tvN Enjoystories";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/tvN-Enjoystories-OTF-Bold.woff2) format("woff2"),
+    url(../fonts/tvN-Enjoystories-OTF-Bold.woff) format("woff"),
+    url(../fonts/tvN-Enjoystories-OTF-Bold.otf) format("opentype");
+}
+
+body {
+  font-family: "Noto Serif KR", sans-serif;
+  font-weight: 400;
+  color: #000;
+  font-size: 15px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  position: relative;
+}
+
+.lato {
+  font-family: "Lato", sans-serif;
+}
+
+.hidden {
+  overflow: hidden !important;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.table {
+  display: table;
+}
+.table_cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.ml0 {
+  margin-left: 0 !important;
+}
+/* common */
+img {
+  max-width: 100%;
+}
+object {
+  position: relative;
+  pointer-events: none;
+}
+#wrap {
+  position: relative;
+  padding-top: 92px;
+  overflow-x: hidden;
+}
+.inner {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1280px;
+}
+button {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+/* header */
+#header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  padding-top: 28px;
+  padding-bottom: 14px;
+  text-align: center;
+}
+#header.fixed {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.22);
+}
+#header .inner {
+  width: 100%;
+  padding: 0 93px;
+  position: relative;
+  height: 50px;
+  box-sizing: border-box;
+}
+#header h1 {
+  position: absolute;
+  left: 93px;
+  top: 0;
+}
+#header h1 a {
+  display: block;
+}
+#header h1 img {
+  display: block;
+  width: 50px;
+}
+#gnb {
+  padding-top: 8px;
+}
+#gnb ul {
+  font-size: 0;
+}
+#gnb ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
+#gnb ul li + li {
+  margin-left: 40px;
+}
+#gnb ul li a {
+  color: #786f70;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.header_right {
+  position: absolute;
+  right: 93px;
+  top: 8px;
+  font-size: 0;
+}
+.header_right a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+  color: #786f70;
+}
+.header_right a + a {
+  margin-left: 49px;
+}
+
+.mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  transition: 0.5s ease-in-out;
+  z-index: 200;
+  opacity: 0;
+  pointer-events: none;
+}
+#sideBar {
+  position: fixed;
+  right: -70%;
+  top: 0;
+  bottom: 0;
+  width: 70%;
+  min-width: 280px;
+  background: #fff;
+  z-index: 300;
+  transition: 0.5s ease-in-out;
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  padding: 30px 30px 0 40px;
+}
+#sideBar.show {
+  right: 0;
+}
+#sideBar .sideBar_top {
+  font-size: 0;
+}
+#sideBar .sideBar_top a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+  color: #000;
+  line-height: 30px;
+}
+#sideBar .sideBar_top a + a {
+  margin-left: 15px;
+  padding-left: 15px;
+  position: relative;
+}
+#sideBar .sideBar_top a + a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 16px;
+  margin-top: -8px;
+  background: #bdbdbd;
+}
+#sideBar #mobile_gnb {
+  margin-top: 20px;
+  padding-top: 40px;
+  border-top: 1px solid #cecece;
+}
+#sideBar #mobile_gnb ul li + li {
+  margin-top: 20px;
+}
+#sideBar #mobile_gnb ul li a {
+  display: block;
+  font-size: 18px;
+}
+#sideBar .close_btn {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background-color: transparent;
+}
+#sideBar .close_btn i {
+  font-size: 30px;
+  color: #333;
+}
+.mobile_btn {
+  display: none;
+}
+.mobile_btn button {
+  background: transparent;
+}
+.mobile_btn button i {
+  font-size: 40px;
+}
+#sideBar {
+  display: none;
+}
+
+#footer {
+  padding: 65px 0 59px;
+}
+#footer .inner {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 93px;
+  overflow: hidden;
+}
+#footer .footer_info {
+  float: left;
+}
+#footer .footer_info strong {
+  display: block;
+  font-size: 12px;
+  color: #999999;
+  font-weight: 300;
+}
+#footer .footer_info > div {
+  font-size: 0;
+  margin-top: 7px;
+}
+#footer .footer_info > div span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #999999;
+  font-weight: 300;
+  line-height: 1.3em;
+}
+#footer .footer_info > div span + span {
+  margin-left: 3px;
+}
+#footer .footer_info .copyright {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #999999;
+  font-weight: 300;
+}
+#footer .footer_right {
+  float: right;
+}
+#footer .footer_right ul li + li {
+  margin-top: 12px;
+}
+#footer .footer_right ul li a {
+  display: block;
+  font-size: 12px;
+  color: #999999;
+  font-weight: 300;
+}
+
+@media (max-width: 1290px) {
+  .inner {
+    max-width: 94%;
+  }
+  #header .inner,
+  #footer .inner {
+    padding: 0;
+  }
+  #header h1 {
+    left: 0;
+  }
+  .header_right {
+    right: 0;
+  }
+
+  #footer .footer_info {
+    width: 70%;
+  }
+  #footer .footer_info > div {
+    margin-bottom: -5px;
+  }
+  #footer .footer_info > div span {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #wrap {
+    padding-top: 80px;
+  }
+  #header {
+    padding: 15px 0;
+  }
+  #header .inner,
+  #footer .inner {
+    height: auto;
+    overflow: hidden;
+  }
+  .header_right {
+    display: none;
+  }
+  #gnb {
+    display: none;
+  }
+  #header h1 {
+    position: static;
+    float: left;
+  }
+  .mobile_btn {
+    float: right;
+    display: block;
+    margin-top: 5px;
+  }
+
+  #footer {
+    padding: 35px 0;
+  }
+  #sideBar {
+    display: block;
+    opacity: 1;
+  }
+  #sideBar.show {
+    pointer-events: all;
+  }
+  .mask {
+    display: block;
+  }
+  .mask.show {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@media (max-width: 767px) {
+  #wrap {
+    padding-top: 59px;
+  }
+  #header {
+    padding: 12px 0;
+  }
+  #header h1 img {
+    width: 35px;
+  }
+  .mobile_btn button i {
+    font-size: 26px;
+  }
+
+  #sideBar {
+    padding: 20px 15px 0 20px;
+  }
+  #sideBar .close_btn {
+    right: 15px;
+    top: 20px;
+  }
+  #sideBar .close_btn i {
+    font-size: 25px;
+  }
+
+  #sideBar .sideBar_top a {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  #sideBar #mobile_gnb {
+    margin-top: 15px;
+    padding-top: 25px;
+  }
+  #sideBar #mobile_gnb ul li a {
+    font-size: 16px;
+  }
+
+  #footer {
+    padding: 25px 0;
+  }
+  #footer .footer_info {
+    width: 100%;
+    float: none;
+  }
+  #footer .footer_right {
+    float: none;
+    margin-top: 20px;
+  }
+  #footer .footer_right ul li + li {
+    margin-top: 6px;
+  }
+  #footer .footer_info > div span {
+    display: block;
+  }
+  #footer .footer_info > div span + span {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  #sideBar {
+    right: -280px;
+  }
+}
